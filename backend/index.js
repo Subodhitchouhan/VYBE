@@ -33,3 +33,7 @@ server.listen(port , ()=>{
     console.log("server started")
 })
 
+// Health check route
+app.get("/", (req, res) => {
+  res.send("API is working!");
+});
